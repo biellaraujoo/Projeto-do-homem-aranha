@@ -1,6 +1,7 @@
-/*Importação da fonte*/
-@import url('https://fonts.cdnfonts.com/css/the-amazing-spider-man');
-@import url('https://fonts.cdnfonts.com/css/amazing-spider-man');
+/*Importação das fontes*/
+@import url('https://fonts.cdnfonts.com/css/the-amazing-spider-man');/*IMPORT do título*/
+@import url('https://fonts.cdnfonts.com/css/amazing-spider-man'); /*IMPORT da dont do subtítulo*/
+@import url('https://fonts.cdnfonts.com/css/alderlite-personal-use'); /*IMPORT da font da do parágrafo*/
 /*reset básico*/
 * { 
 box-sizing: border-box;
@@ -48,7 +49,8 @@ nav {
 }
 .card img {
     width: 100%;
-    height: 200px;
+    height: 150px;
+    border-radius: 10px;
 }
 .card:hover {
     display: inline-block;
@@ -57,5 +59,37 @@ nav {
     padding: 10px;
     background-color: #B11;
     border-radius: 10px;
-    
+    transform: translateY(-20px);
+    transition: 0.5s;
 }
+#personagens h2 {
+    font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
+    color: aliceblue;
+}
+#personagens {
+    background-image: url(./IMAGENS/spiderrrrrrrrrrrrrrrrrrrrrrrrbanner.jpg);
+    /*background-size: Mexe no tamanho da imagem/ plano de fundo | cover = esticar a imagem | 
+    contain = mantém o tamanho original da imagem |
+    background-repeat: tira a repetição ou coloca repetição | no repeat = impede a reetição da imagem |
+    background-position: altera a posição da minha imagem | left, right, center.*/
+    background-size: 1400px;
+}
+#filmes {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #B11;
+    border-radius: 10px;
+}
+.filmes-1 img {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+
