@@ -1,0 +1,69 @@
+/*Importação das fontes*/
+@import url('https://fonts.cdnfonts.com/css/the-amazing-spider-man');
+/*IMPORT do título*/
+@import url('https://fonts.cdnfonts.com/css/amazing-spider-man');
+/*IMPORT da dont do subtítulo*/
+@import url('https://fonts.cdnfonts.com/css/alderlite-personal-use');
+
+/*IMPORT da font da do parágrafo*/
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(177, 18, 18);
+}
+
+header {
+    background-color: #1d2750;
+}
+
+/* section onde contém os cards */
+#personagem {
+    background-color: rgb(50, 16, 127);
+    padding: 50px 20px 50px 20px;
+}
+
+/* título da section */
+#personagem h2 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+/* alterações do estilo do card */
+.container-personagem {
+    display: flex;
+    /*Ativar display do tipo flexbox*/
+    flex-wrap: wrap;
+    /*Permite quebrar a linha se não houver espaço suficiente*/
+    gap: 30px;
+    /*serve para criar um espaçamento sobre todos os itens*/
+
+    /* Centralizar os cards no eixo principal */
+    flex-direction: row;
+    justify-content: center;
+    /*Deixa todos os itens do mesmo tamanho*/
+    align-items: stretch;
+}
+
+.item {
+    width: 250px;
+    background-color: #8c5bfdc4;
+    border-radius: 10px;
+    padding: 20px;
+    /*ativar o flexbox*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.item img {
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
