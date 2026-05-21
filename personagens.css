@@ -29,21 +29,21 @@ header {
 
 /* título da section */
 #personagem h2 {
+    font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
     color: aliceblue;
     text-align: center;
-    font-size: 27px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 /* alterações do estilo do card */
 .container-personagem {
-    display: flex;
     /*Ativar display do tipo flexbox*/
-    flex-wrap: wrap;
+    display: flex;
     /*Permite quebrar a linha se não houver espaço suficiente*/
-    gap: 30px;
+    flex-wrap: wrap;
     /*serve para criar um espaçamento sobre todos os itens*/
-
+    gap: 30px;
     /* Centralizar os cards no eixo principal */
     flex-direction: row;
     justify-content: center;
@@ -59,11 +59,118 @@ header {
     /*ativar o flexbox*/
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
+    transition: 0.5s;
 }
 
+.item:hover {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 23px 20px #000000;
+    background-color: rgb(187, 17, 17, 0.877);
+    border-radius: 10px;
+    transform: translateY(-20px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item:active {
+    background-color: #4c00ffc4;
+}
 
 .item img {
-    border-radius: 10px;
+    width: 220px;
+    object-fit: contain;
     padding-bottom: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo do meu parágrafo */
+.item p {
+    text-align: left;
+    color: #1d2750;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 20px;
+}
+
+.tags {
+    display: flex;
+    /*quebra de linha */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    color: aliceblue;
+}
+
+.tag {
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: black;
+}
+
+.noir {
+    background-color: #1d2750;
+}
+
+.miles-morales {
+    background-color: crimson;
+}
+
+.peni {
+    background-color: rgb(207, 207, 30);
+}
+
+.porco {
+    background-color: salmon;
+}
+
+.miguel {
+    background-color: rgb(14, 14, 179);
+}
+
+.gwen {
+    background-color: rgb(201, 74, 95);
+}
+
+.peter {
+    background-color: rgb(151, 2, 2);
+}
+
+.brown {
+    background-color: rgb(121, 42, 5);
+}
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+    #personagem h2 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .item {
+        width: 600px;
+    }
+}
+@media (max-width: 600px) {
+    .item img {
+        padding: 10px;
+        width: 295px;
+    }
+}
+@media (max-width: 600px) {
+    .item:hover {
+        width: 600px;
+    }
 }
